@@ -1,0 +1,173 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba6tjcvw66cey"]
+
+[ext_resource type="Script" path="res://next_2.gd" id="1_4bd63"]
+[ext_resource type="PackedScene" uid="uid://cbpad8bh7jh4q" path="res://Background.tscn" id="1_omepx"]
+[ext_resource type="AudioStream" uid="uid://b1s587wddygxs" path="res://vfx/Game Background.mp3" id="3_134bw"]
+[ext_resource type="PackedScene" uid="uid://cg22td5yd7dga" path="res://Collectables/gem.tscn" id="4_7veav"]
+
+[node name="Next2" type="Node2D"]
+script = ExtResource("1_4bd63")
+
+[node name="nex3" type="Button" parent="."]
+offset_left = 1093.0
+offset_top = 47.0
+offset_right = 1162.0
+offset_bottom = 89.0
+scale = Vector2(0.539059, 0.617554)
+text = "NEXT"
+
+[node name="Background" parent="." instance=ExtResource("1_omepx")]
+
+[node name="Look Up4" type="Label" parent="Background"]
+offset_left = 51.0
+offset_top = 42.0
+offset_right = 1062.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Competence Level in Website Utilities and Tools"
+
+[node name="Look Up4" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 391.0
+offset_right = 1017.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Unconscious 
+Incompetence"
+
+[node name="Look Up5" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 303.0
+offset_right = 1016.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Conscious 
+Incompetence"
+
+[node name="Look Up6" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 210.0
+offset_right = 1014.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Conscious 
+Competence"
+
+[node name="Look Up7" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 126.0
+offset_right = 1015.0
+offset_bottom = 154.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Unconscious 
+Competence"
+
+[node name="Look Up8" type="Label" parent="."]
+offset_left = 225.0
+offset_top = 113.0
+offset_right = 300.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "FIGMA"
+
+[node name="Look Up9" type="Label" parent="."]
+offset_left = 336.0
+offset_top = 113.0
+offset_right = 411.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "GITHUB"
+
+[node name="Look Up10" type="Label" parent="."]
+offset_left = 465.0
+offset_top = 113.0
+offset_right = 582.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "BOOTSTRAP"
+
+[node name="Look Up11" type="Label" parent="."]
+offset_left = 631.0
+offset_top = 113.0
+offset_right = 748.0
+offset_bottom = 172.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "AI SYSTEM/
+TOOLS"
+horizontal_alignment = 1
+
+[node name="Look Up12" type="Label" parent="."]
+offset_left = 792.0
+offset_top = 113.0
+offset_right = 909.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "CANVA"
+
+[node name="Look Up13" type="Label" parent="."]
+offset_left = 921.0
+offset_top = 113.0
+offset_right = 1047.0
+offset_bottom = 172.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "TINKERCAD/
+SIMULATORS"
+horizontal_alignment = 1
+
+[node name="back" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_134bw")
+
+[node name="Gem7" parent="." instance=ExtResource("4_7veav")]
+position = Vector2(245, 285)
+
+[node name="Gem8" parent="." instance=ExtResource("4_7veav")]
+position = Vector2(379, 285)
+
+[node name="Gem9" parent="." instance=ExtResource("4_7veav")]
+position = Vector2(523, 285)
+
+[node name="Gem10" parent="." instance=ExtResource("4_7veav")]
+position = Vector2(689, 208)
+
+[node name="Gem11" parent="." instance=ExtResource("4_7veav")]
+position = Vector2(833, 208)
+
+[node name="Gem12" parent="." instance=ExtResource("4_7veav")]
+position = Vector2(978, 208)
+
+[node name="back234" type="Button" parent="."]
+offset_left = 1052.0
+offset_top = 47.0
+offset_right = 1121.0
+offset_bottom = 89.0
+scale = Vector2(0.539059, 0.617554)
+text = "BACK"
+
+[connection signal="pressed" from="nex3" to="." method="_on_nex_3_pressed"]
+[connection signal="pressed" from="back234" to="." method="_on_back_234_pressed"]

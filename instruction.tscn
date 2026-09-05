@@ -1,0 +1,350 @@
+[gd_scene load_steps=9 format=3 uid="uid://vtdyowbfppc"]
+
+[ext_resource type="Script" path="res://instruction.gd" id="1_sj7wa"]
+[ext_resource type="PackedScene" uid="uid://0dfdjq2pnhkm" path="res://Background.tscn" id="2_aor7l"]
+[ext_resource type="Texture2D" uid="uid://bbjq3r8vpdf2o" path="res://Assets/download.png" id="3_agxrh"]
+[ext_resource type="Texture2D" uid="uid://b07g7wmdeg0ur" path="res://Assets/download (1).png" id="4_hfyd5"]
+[ext_resource type="Texture2D" uid="uid://occlnosodkda" path="res://Assets/download (2).png" id="5_g24ln"]
+[ext_resource type="Texture2D" uid="uid://e85d3ijybhpp" path="res://Assets/download (3).png" id="6_anodb"]
+[ext_resource type="AudioStream" uid="uid://b1s587wddygxs" path="res://vfx/Game Background.mp3" id="7_pjckg"]
+[ext_resource type="AudioStream" uid="uid://byude43tqleuj" path="res://vfx/before.mp3" id="8_ewmpf"]
+
+[node name="Instruction" type="Node2D"]
+script = ExtResource("1_sj7wa")
+
+[node name="Left" type="Label" parent="."]
+offset_left = 60.0
+offset_top = 290.0
+offset_right = 163.0
+offset_bottom = 318.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Run
+"
+
+[node name="Look Up" type="Label" parent="."]
+offset_left = 208.0
+offset_top = 126.0
+offset_right = 288.0
+offset_bottom = 154.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Look Up"
+
+[node name="Right" type="Label" parent="."]
+offset_left = 393.0
+offset_top = 289.0
+offset_right = 496.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Run"
+
+[node name="Right2" type="Label" parent="."]
+offset_left = 468.055
+offset_top = 148.0
+offset_right = 571.055
+offset_bottom = 176.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Roll Dash"
+
+[node name="Right4" type="Label" parent="."]
+offset_left = 593.0
+offset_top = 433.0
+offset_right = 966.0
+offset_bottom = 461.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Foxy treats Gem as his treasured Gold!"
+
+[node name="Right5" type="Label" parent="."]
+offset_left = 593.0
+offset_top = 459.0
+offset_right = 966.0
+offset_bottom = 487.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Jumping over froggies gives 5 Gold!"
+
+[node name="Right3" type="Label" parent="."]
+offset_left = 475.055
+offset_top = 284.0
+offset_right = 578.055
+offset_bottom = 312.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Jump"
+
+[node name="Ctrl" type="Label" parent="."]
+z_index = 1
+offset_left = 494.055
+offset_top = 201.0
+offset_right = 597.055
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Ctrl
+"
+
+[node name="Ctrl2" type="Label" parent="."]
+z_index = 1
+offset_left = 300.0
+offset_top = 286.0
+offset_right = 403.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Right"
+
+[node name="Ctrl3" type="Label" parent="."]
+z_index = 1
+offset_left = 157.0
+offset_top = 285.0
+offset_right = 260.0
+offset_bottom = 313.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Left
+"
+
+[node name="Ctrl4" type="Label" parent="."]
+z_index = 1
+offset_left = 236.0
+offset_top = 176.0
+offset_right = 339.0
+offset_bottom = 204.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Up"
+
+[node name="Ctrl5" type="Label" parent="."]
+z_index = 1
+offset_left = 220.0
+offset_top = 374.0
+offset_right = 323.0
+offset_bottom = 402.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Down"
+
+[node name="Ctrl6" type="Label" parent="."]
+z_index = 1
+offset_left = 509.055
+offset_top = 339.0
+offset_right = 612.055
+offset_bottom = 367.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Space Bar"
+metadata/_edit_use_anchors_ = true
+
+[node name="Ctrl7" type="Label" parent="."]
+z_index = 1
+offset_left = 756.0
+offset_top = 291.0
+offset_right = 1081.0
+offset_bottom = 319.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Double clicking the space bar will lead to a double Foxy jump."
+
+[node name="Ctrl8" type="Label" parent="."]
+z_index = 1
+offset_left = 755.0
+offset_top = 151.0
+offset_right = 1080.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Pressing up to a ladder will make Foxy climb it."
+
+[node name="Ctrl9" type="Label" parent="."]
+z_index = 1
+offset_left = 757.0
+offset_top = 179.0
+offset_right = 1082.0
+offset_bottom = 207.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Foxy can wall grab as you jump and"
+
+[node name="Ctrl10" type="Label" parent="Ctrl9"]
+z_index = 1
+layout_mode = 0
+offset_top = 13.0
+offset_right = 325.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "hold the left or right button towards the wall."
+
+[node name="Ctrl12" type="Label" parent="Ctrl9/Ctrl10"]
+z_index = 1
+layout_mode = 0
+offset_top = 14.0
+offset_right = 325.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "While doing this, you can hold the up and down"
+
+[node name="Ctrl13" type="Label" parent="Ctrl9/Ctrl10/Ctrl12"]
+z_index = 1
+layout_mode = 0
+offset_top = 13.0
+offset_right = 325.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "to go upwards or downwards the wall."
+
+[node name="Ctrl11" type="Label" parent="."]
+z_index = 1
+offset_left = 757.0
+offset_top = 247.0
+offset_right = 1082.0
+offset_bottom = 275.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Foxy can also spam the jump button while in wall grab!"
+
+[node name="Crouch" type="Label" parent="."]
+offset_left = 214.0
+offset_top = 442.0
+offset_right = 317.0
+offset_bottom = 470.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Crouch"
+
+[node name="Proceed" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 554.0
+offset_right = 1075.0
+offset_bottom = 596.0
+text = "PROCEED"
+
+[node name="Background" parent="." instance=ExtResource("2_aor7l")]
+
+[node name="Title" type="Label" parent="."]
+offset_left = 60.0
+offset_top = 551.0
+offset_right = 137.0
+offset_bottom = 574.0
+scale = Vector2(2.66044, 1.83919)
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.72549, 0.796078, 0.941176, 0)
+text = "JUMP FOX"
+
+[node name="Download(2)" type="Sprite2D" parent="."]
+position = Vector2(725.458, 205.5)
+scale = Vector2(0.0866859, 0.095339)
+texture = ExtResource("5_g24ln")
+
+[node name="Download(1)2" type="Sprite2D" parent="."]
+position = Vector2(556.055, 355)
+scale = Vector2(0.213564, 0.159957)
+texture = ExtResource("4_hfyd5")
+
+[node name="Download(1)3" type="Sprite2D" parent="."]
+position = Vector2(556.055, 355)
+scale = Vector2(0.213564, 0.159957)
+texture = ExtResource("4_hfyd5")
+
+[node name="Download(2)2" type="Sprite2D" parent="."]
+position = Vector2(726.458, 159.5)
+scale = Vector2(0.0866859, 0.095339)
+texture = ExtResource("5_g24ln")
+
+[node name="Download(2)3" type="Sprite2D" parent="."]
+position = Vector2(726.458, 253.5)
+scale = Vector2(0.0866859, 0.095339)
+texture = ExtResource("5_g24ln")
+
+[node name="Download(2)4" type="Sprite2D" parent="."]
+position = Vector2(726, 300)
+scale = Vector2(0.0866859, 0.095339)
+texture = ExtResource("5_g24ln")
+
+[node name="Download(1)" type="Sprite2D" parent="."]
+position = Vector2(515.055, 216)
+scale = Vector2(0.11793, 0.152542)
+texture = ExtResource("4_hfyd5")
+
+[node name="Right6" type="Label" parent="."]
+offset_left = 585.305
+offset_top = 148.0
+offset_right = 688.305
+offset_bottom = 176.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Enter"
+
+[node name="Ctrl10" type="Label" parent="."]
+z_index = 1
+offset_left = 605.055
+offset_top = 200.0
+offset_right = 708.055
+offset_bottom = 228.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Enter"
+
+[node name="Download(1)4" type="Sprite2D" parent="."]
+position = Vector2(632.305, 216)
+scale = Vector2(0.11793, 0.152542)
+texture = ExtResource("4_hfyd5")
+
+[node name="Download" type="Sprite2D" parent="."]
+position = Vector2(248, 300)
+scale = Vector2(0.654775, 0.611229)
+texture = ExtResource("3_agxrh")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 1086.0
+offset_top = 18.0
+offset_right = 1175.0
+offset_bottom = 68.0
+scale = Vector2(0.539059, 0.617554)
+text = "BACK
+"
+
+[node name="Download(3)" type="Sprite2D" parent="."]
+position = Vector2(1014, 461)
+scale = Vector2(0.0930233, 0.101695)
+texture = ExtResource("6_anodb")
+
+[node name="back" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_pjckg")
+
+[node name="next" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_ewmpf")
+volume_db = 24.0
+
+[connection signal="pressed" from="Proceed" to="." method="_on_proceed_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

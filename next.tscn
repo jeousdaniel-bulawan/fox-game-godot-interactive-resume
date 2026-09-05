@@ -1,0 +1,211 @@
+[gd_scene load_steps=7 format=3 uid="uid://d32pl7x3p6xgb"]
+
+[ext_resource type="Script" path="res://next.gd" id="1_lutun"]
+[ext_resource type="PackedScene" uid="uid://cbpad8bh7jh4q" path="res://Background.tscn" id="2_kwexi"]
+[ext_resource type="AudioStream" uid="uid://b1s587wddygxs" path="res://vfx/Game Background.mp3" id="3_gndxg"]
+[ext_resource type="AudioStream" uid="uid://d328tyjpgx8y2" path="res://vfx/Menu Click Button.mp3" id="4_rf7t3"]
+[ext_resource type="AudioStream" uid="uid://bo1smmxri2hj3" path="res://vfx/win.mp3" id="5_sgw6f"]
+[ext_resource type="PackedScene" uid="uid://cg22td5yd7dga" path="res://Collectables/gem.tscn" id="6_i4o8v"]
+
+[node name="Next" type="Node2D"]
+script = ExtResource("1_lutun")
+
+[node name="nex1" type="Button" parent="."]
+offset_left = 1093.0
+offset_top = 47.0
+offset_right = 1162.0
+offset_bottom = 89.0
+scale = Vector2(0.539059, 0.617554)
+text = "NEXT"
+
+[node name="back2" type="Button" parent="."]
+offset_left = 1052.0
+offset_top = 47.0
+offset_right = 1121.0
+offset_bottom = 89.0
+scale = Vector2(0.539059, 0.617554)
+text = "BACK"
+
+[node name="Background" parent="." instance=ExtResource("2_kwexi")]
+
+[node name="back" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_gndxg")
+
+[node name="click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_rf7t3")
+
+[node name="win" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_sgw6f")
+
+[node name="Look Up4" type="Label" parent="."]
+offset_left = 51.0
+offset_top = 42.0
+offset_right = 1062.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Competence Level in Coding"
+
+[node name="Look Up4" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 391.0
+offset_right = 1017.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Unconscious 
+Incompetence"
+
+[node name="Look Up5" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 303.0
+offset_right = 1016.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Conscious 
+Incompetence"
+
+[node name="Look Up6" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 210.0
+offset_right = 1014.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Conscious 
+Competence"
+
+[node name="Look Up7" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 126.0
+offset_right = 1015.0
+offset_bottom = 154.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Unconscious 
+Competence"
+
+[node name="Look Up8" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 68.0
+offset_right = 1185.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "C++"
+
+[node name="Look Up9" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 68.0
+offset_right = 1273.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "PYTHON"
+
+[node name="Look Up10" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 68.0
+offset_right = 1397.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "JAVASCRIPT"
+
+[node name="Look Up11" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 68.0
+offset_right = 1542.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "R"
+
+[node name="Look Up12" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 596.0
+offset_top = 68.0
+offset_right = 1607.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "PHP"
+
+[node name="Look Up13" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 677.0
+offset_top = 68.0
+offset_right = 1688.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "CSS"
+
+[node name="Look Up14" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 748.0
+offset_top = 68.0
+offset_right = 1759.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "MYSQL"
+
+[node name="Look Up15" type="Label" parent="Look Up4"]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 68.0
+offset_right = 1857.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "MATLAB"
+
+[node name="Gem" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(835, 189)
+
+[node name="Gem2" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(750, 190)
+
+[node name="Gem3" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(666, 190)
+
+[node name="Gem4" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(590, 285)
+
+[node name="Gem5" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(495, 285)
+
+[node name="Gem6" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(353, 285)
+
+[node name="Gem7" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(245, 285)
+
+[node name="Gem8" parent="." instance=ExtResource("6_i4o8v")]
+position = Vector2(944, 277)
+
+[connection signal="pressed" from="nex1" to="." method="_on_nex_1_pressed"]
+[connection signal="pressed" from="back2" to="." method="_on_back_2_pressed"]

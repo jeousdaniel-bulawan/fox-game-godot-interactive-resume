@@ -1,0 +1,211 @@
+[gd_scene load_steps=5 format=3 uid="uid://uop034wbath6"]
+
+[ext_resource type="PackedScene" uid="uid://cbpad8bh7jh4q" path="res://Background.tscn" id="1_vjslj"]
+[ext_resource type="Script" path="res://next_3.gd" id="1_w5n6o"]
+[ext_resource type="PackedScene" uid="uid://cg22td5yd7dga" path="res://Collectables/gem.tscn" id="3_xnhle"]
+[ext_resource type="AudioStream" uid="uid://b1s587wddygxs" path="res://vfx/Game Background.mp3" id="4_nbx1e"]
+
+[node name="Next3" type="Node2D"]
+script = ExtResource("1_w5n6o")
+
+[node name="done" type="Button" parent="."]
+offset_left = 1093.0
+offset_top = 47.0
+offset_right = 1162.0
+offset_bottom = 89.0
+scale = Vector2(0.539059, 0.617554)
+text = "NEXT"
+
+[node name="Background" parent="." instance=ExtResource("1_vjslj")]
+
+[node name="Look Up4" type="Label" parent="Background"]
+offset_left = 51.0
+offset_top = 42.0
+offset_right = 1062.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Competence Level in Softwares"
+
+[node name="Look Up4" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 391.0
+offset_right = 1017.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Unconscious 
+Incompetence"
+
+[node name="Look Up5" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 303.0
+offset_right = 1016.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Conscious 
+Incompetence"
+
+[node name="Look Up6" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 210.0
+offset_right = 1014.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Conscious 
+Competence"
+
+[node name="Look Up7" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 126.0
+offset_right = 1015.0
+offset_bottom = 154.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Unconscious 
+Competence"
+
+[node name="Look Up8" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 68.0
+offset_right = 226.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "GODOT"
+
+[node name="Look Up9" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 68.0
+offset_right = 318.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "XAMPP"
+
+[node name="Look Up10" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 68.0
+offset_right = 441.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "AUTOCAD"
+
+[node name="Look Up11" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 68.0
+offset_right = 581.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "MICROSOFT 
+365"
+horizontal_alignment = 1
+
+[node name="Look Up12" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 68.0
+offset_right = 717.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "GOOGLE 
+WORKSPACE"
+horizontal_alignment = 1
+
+[node name="Look Up13" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 68.0
+offset_right = 861.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "NI MULTISIM"
+horizontal_alignment = 1
+
+[node name="Look Up14" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 843.0
+offset_top = 68.0
+offset_right = 968.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "VS
+CODE"
+horizontal_alignment = 1
+
+[node name="Look Up15" type="Label" parent="Background/Look Up4"]
+layout_mode = 0
+offset_left = 938.0
+offset_top = 68.0
+offset_right = 1063.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "FL STUDIO"
+horizontal_alignment = 1
+
+[node name="Gem7" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(239, 192)
+
+[node name="Gem8" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(333, 192)
+
+[node name="Gem9" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(443, 192)
+
+[node name="Gem10" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(567, 192)
+
+[node name="Gem11" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(707, 192)
+
+[node name="Gem12" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(856, 192)
+
+[node name="Gem13" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(957, 192)
+
+[node name="Gem14" parent="." instance=ExtResource("3_xnhle")]
+position = Vector2(1053, 275)
+
+[node name="back23" type="Button" parent="."]
+offset_left = 1052.0
+offset_top = 47.0
+offset_right = 1121.0
+offset_bottom = 89.0
+scale = Vector2(0.539059, 0.617554)
+text = "BACK"
+
+[node name="back" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_nbx1e")
+
+[connection signal="pressed" from="done" to="." method="_on_done_pressed"]
+[connection signal="pressed" from="back23" to="." method="_on_back_23_pressed"]

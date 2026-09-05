@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://clyfupy0duh40"]
+
+[ext_resource type="Script" path="res://portal.gd" id="1_e6ajy"]
+[ext_resource type="Texture2D" uid="uid://bkilts6ufe2wa" path="res://Tileset/Dimensional_Portal.png" id="1_h64oa"]
+[ext_resource type="AudioStream" uid="uid://chml752s7orpb" path="res://vfx/portal.mp3" id="3_jmttq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3ivx"]
+atlas = ExtResource("1_h64oa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj7tr"]
+atlas = ExtResource("1_h64oa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj6di"]
+atlas = ExtResource("1_h64oa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54dbk"]
+atlas = ExtResource("1_h64oa")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnyo1"]
+atlas = ExtResource("1_h64oa")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0m2h"]
+atlas = ExtResource("1_h64oa")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_po5d4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3ivx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj7tr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bj6di")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54dbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jnyo1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0m2h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v2gf0"]
+radius = 4.0
+
+[node name="Portal" type="Area2D" groups=["Player"]]
+script = ExtResource("1_e6ajy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_po5d4")
+autoplay = "default"
+frame_progress = 0.611466
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_v2gf0")
+
+[node name="DestinationPoint" type="Marker2D" parent="."]
+position = Vector2(29, -1)
+
+[node name="Warp" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_jmttq")
+volume_db = 0.693
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

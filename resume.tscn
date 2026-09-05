@@ -1,0 +1,111 @@
+[gd_scene load_steps=4 format=3 uid="uid://0r88p5khlxcd"]
+
+[ext_resource type="Script" path="res://resume.gd" id="1_mic0n"]
+[ext_resource type="PackedScene" uid="uid://0dfdjq2pnhkm" path="res://Background.tscn" id="2_qxnu7"]
+[ext_resource type="AudioStream" uid="uid://b1s587wddygxs" path="res://vfx/Game Background.mp3" id="3_5pdyh"]
+
+[node name="resume" type="Node2D"]
+script = ExtResource("1_mic0n")
+
+[node name="Background" parent="." instance=ExtResource("2_qxnu7")]
+
+[node name="Look Up" type="Label" parent="Background"]
+offset_left = 86.0
+offset_top = 185.0
+offset_right = 1097.0
+offset_bottom = 213.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "The creator of this game is Jeous Daniel Bulawan, a Bachelor of Science in Computer Engineering Student"
+
+[node name="Look Up2" type="Label" parent="Background/Look Up"]
+layout_mode = 0
+offset_top = 23.0
+offset_right = 1011.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "in Polytechnic University of the Philippines Paranaque Campus. He aims to always offer the demanded"
+
+[node name="Look Up4" type="Label" parent="Background/Look Up"]
+layout_mode = 0
+offset_top = 118.0
+offset_right = 1013.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "With vast capabilities in softwares and hardwares, and has innate talent to adapt and learn, Jeous always"
+
+[node name="Look Up5" type="Label" parent="Background/Look Up"]
+layout_mode = 0
+offset_top = 118.0
+offset_right = 1013.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "With vast capabilities in softwares and hardwares, and has innate talent to adapt and learn, Jeous always"
+
+[node name="Look Up3" type="Label" parent="Background/Look Up/Look Up5"]
+layout_mode = 0
+offset_top = -70.0
+offset_right = 1011.0
+offset_bottom = -42.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "standard than going overboard and subpar, making his work in caliber rather than felt rushed."
+
+[node name="Look Up6" type="Label" parent="Background/Look Up/Look Up5"]
+layout_mode = 0
+offset_top = 28.0
+offset_right = 1011.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "have the intention to further his skill set."
+
+[node name="Look Up7" type="Label" parent="Background/Look Up/Look Up5"]
+layout_mode = 0
+offset_top = 93.0
+offset_right = 1011.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Enjoy the little game he prepared as his Interactive Resume in partial fulfillment on the subject"
+
+[node name="Look Up8" type="Label" parent="Background/Look Up/Look Up5"]
+layout_mode = 0
+offset_top = 123.0
+offset_right = 1011.0
+offset_bottom = 151.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Technical Report Writing! "
+
+[node name="Look Up8" type="Label" parent="Background/Look Up/Look Up5/Look Up8"]
+offset_top = 139.0
+offset_right = 1011.0
+offset_bottom = 167.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "All Rights Reserved to Owners of Audio Used."
+
+[node name="Proceed" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 554.0
+offset_right = 1075.0
+offset_bottom = 596.0
+text = "BACK"
+
+[node name="back" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_5pdyh")
+
+[connection signal="pressed" from="Proceed" to="." method="_on_proceed_pressed"]

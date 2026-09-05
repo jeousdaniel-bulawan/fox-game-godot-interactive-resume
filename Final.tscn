@@ -1,0 +1,99 @@
+[gd_scene load_steps=9 format=3 uid="uid://qa5ulwpnckyi"]
+
+[ext_resource type="Script" path="res://final.gd" id="1_j30kn"]
+[ext_resource type="PackedScene" uid="uid://cbpad8bh7jh4q" path="res://Background.tscn" id="2_l6qxc"]
+[ext_resource type="Texture2D" uid="uid://csreqjnw7sckx" path="res://Assets/GMAIL.png" id="2_q4nms"]
+[ext_resource type="Texture2D" uid="uid://d1p148e47th63" path="res://Assets/download (4).png" id="3_7cgcc"]
+[ext_resource type="Texture2D" uid="uid://cbjqc0hols1ku" path="res://Assets/linkin-600x600.png" id="4_vlbdw"]
+[ext_resource type="AudioStream" uid="uid://bo1smmxri2hj3" path="res://vfx/win.mp3" id="5_rtk3j"]
+[ext_resource type="AudioStream" uid="uid://b1s587wddygxs" path="res://vfx/Game Background.mp3" id="6_rv6n4"]
+[ext_resource type="AudioStream" uid="uid://d328tyjpgx8y2" path="res://vfx/Menu Click Button.mp3" id="7_a0fr3"]
+
+[node name="Final" type="Node2D"]
+script = ExtResource("1_j30kn")
+
+[node name="Ctrl8" type="Label" parent="."]
+z_index = 1
+offset_left = 496.0
+offset_top = 357.0
+offset_right = 821.0
+offset_bottom = 385.0
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Interested? Contact the Creator!"
+
+[node name="Background2" parent="." instance=ExtResource("2_l6qxc")]
+
+[node name="Title" type="Label" parent="Background2"]
+offset_left = 352.0
+offset_top = 151.0
+offset_right = 532.0
+offset_bottom = 174.0
+scale = Vector2(2.66044, 1.83919)
+theme_override_colors/font_color = Color(1, 0.85098, 0, 0.431373)
+theme_override_colors/font_shadow_color = Color(0.247059, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.72549, 0.796078, 0.941176, 0)
+text = "JUMP FOX COMPLETED!"
+
+[node name="Gmail" type="Sprite2D" parent="."]
+position = Vector2(313, 400)
+scale = Vector2(0.0878906, 0.0976563)
+texture = ExtResource("2_q4nms")
+
+[node name="LinkButton" type="LinkButton" parent="Gmail"]
+offset_left = 250.311
+offset_top = -102.4
+offset_right = 2522.31
+offset_bottom = 443.6
+theme_override_font_sizes/font_size = 200
+text = "Google Mail"
+uri = "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpclSSQXLdfMrbBmFpsVpmfNXjLGHvntZdNWQrmtQfrZHbFHkdrlpPhcxrMQXfPmffBtRg"
+
+[node name="Facebook" type="Sprite2D" parent="."]
+position = Vector2(536.656, 404.563)
+scale = Vector2(0.0847576, 0.0950742)
+texture = ExtResource("3_7cgcc")
+
+[node name="LinkButton" type="LinkButton" parent="Facebook"]
+offset_left = 253.74
+offset_top = -147.583
+offset_right = 2525.74
+offset_bottom = 398.417
+theme_override_font_sizes/font_size = 200
+text = "Facebook"
+uri = "https://www.facebook.com/jeous.daniel.bulawan/"
+
+[node name="LinkedIn" type="Sprite2D" parent="."]
+position = Vector2(753.75, 404.5)
+scale = Vector2(0.0608334, 0.0583333)
+texture = ExtResource("4_vlbdw")
+
+[node name="LinkButton2" type="LinkButton" parent="LinkedIn"]
+offset_left = 464.383
+offset_top = -265.714
+offset_right = 3538.38
+offset_bottom = 1191.29
+theme_override_font_sizes/font_size = 342
+text = "LinkedIn"
+uri = "https://www.linkedin.com/in/jeous-daniel-bulawan-45a366243/"
+
+[node name="Menu" type="Button" parent="."]
+offset_left = 1097.0
+offset_top = 18.0
+offset_right = 1166.0
+offset_bottom = 60.0
+scale = Vector2(0.539059, 0.617554)
+text = "MENU
+"
+
+[node name="win" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_rtk3j")
+
+[node name="back" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_rv6n4")
+
+[node name="click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_a0fr3")
+
+[connection signal="pressed" from="Menu" to="." method="_on_quit_pressed"]

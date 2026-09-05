@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdhf82sd5cvcc"]
+
+[ext_resource type="Shader" path="res://grass_2.gdshader" id="1_3au3f"]
+[ext_resource type="Script" path="res://grass_2.gd" id="2_kdrkm"]
+[ext_resource type="Texture2D" uid="uid://rpd85374h137" path="res://Tileset/grass2.png" id="2_t365m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rtxcn"]
+resource_local_to_scene = true
+shader = ExtResource("1_3au3f")
+shader_parameter/skew = 0.0
+
+[node name="Grass2" type="Area2D"]
+material = SubResource("ShaderMaterial_rtxcn")
+use_parent_material = true
+script = ExtResource("2_kdrkm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+use_parent_material = true
+texture = ExtResource("2_t365m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
