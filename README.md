@@ -1,22 +1,23 @@
-# Jump Fox Game 
+# Fox Jump Game
 
 **Overview**
-This repository contains the exported HTML5 files for a game developed in the Godot Engine. It was built using free, open-source assets to experiment with Godot's web export capabilities. The game relies on WebAssembly and JavaScript to execute the engine logic directly within a browser environment[cite: 2, 4].
+This repository acts as a storage vault for the exported HTML5 files of a game developed in the Godot Engine. It was built using free, open-source assets to experiment with Godot's web export capabilities. The game relies on WebAssembly and JavaScript to execute the engine logic directly within a browser environment.
 
 **Included Files**
-* **HTML/JS:** The core `index.html` entry point[cite: 2] and the `index.js` engine script[cite: 4].
-* **WebAssembly:** The compiled `index.wasm` engine code[cite: 2, 3].
-* **Game Data:** The `index.pck` package containing all game assets, scenes, and logic[cite: 2].
-* **Audio:** The `index.audio.worklet.js` script handling audio processing[cite: 1].
+* **HTML/JS:** The core `index.html` entry point and the `index.js` engine script.
+* **WebAssembly:** The compiled `index.wasm` engine code.
+* **Game Data:** The `index.pck` package containing all game assets, scenes, and logic.
+* **Audio:** The `index.audio.worklet.js` script handling audio processing.
 
 **Running the Game Locally**
-Because of standard browser CORS (Cross-Origin Resource Sharing) restrictions, simply double-clicking the `index.html` file will result in a loading error[cite: 2]. You must serve these files through a local web server to run the game.
+Because of standard browser CORS (Cross-Origin Resource Sharing) restrictions, simply double-clicking the `index.html` file will result in a loading error. These files must be served through a local web server to run the game.
 
-If you have Python installed, open your terminal in this repository's directory and run:
+If Python is installed, open a terminal in this repository's directory and run:
+
 `python -m http.server 8000`
 
-Then, open your web browser and navigate to `http://localhost:8000`.
+Then, open a web browser and navigate to `http://localhost:8000`.
 
 **Credits**
 * **Engine:** Godot Engine
-* **Assets:** [List specific creators or websites here, such as Kenney.nl, OpenGameArt, etc.]
+* **Assets:** Free community assets sourced from Kenney and OpenGameArt.
